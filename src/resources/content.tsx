@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Lovish",
+  lastName: "Kumar",
+  name: `Lovish Kumar`,
+  role: "Data Scientist",
+  avatar: "/images/profile_picture.jpg",
+  email: "iamlovsihkumar@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi", "French"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,26 +25,20 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/lovishkumar02",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/lovishkumar07",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/amlavishgrover/",
     essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
   },
   {
     name: "Email",
@@ -60,12 +54,12 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>From data pipelines to decisive leadership.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Lovish's</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
@@ -76,7 +70,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I’m Lovish, an engineer focused on building robust backend systems and intelligent digital products. Beyond writing code, I lead initiatives that transform ideas into scalable, high-impact solutions.
 </>
   ),
 };
@@ -102,9 +96,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+Lovish is an India-based engineer with a vision to engineer change beyond code. 
+His work blends technical depth with leadership, 
+transforming complex challenges into scalable solutions and meaningful impact.
       </>
     ),
   },
@@ -113,41 +107,39 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Ruhil Future Technologies",
+        timeframe: "June 2025 - August 2025",
+        role: "Produt Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led end-to-end development across UI/UX and backend systems, 
+            building scalable features with Python and Flask while delivering a 
+            seamless and performance-optimized user experience.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Drove cross-functional execution—from product design to technical implementation and 
+            teaching—developing course modules and translating complex 
+            engineering concepts into impactful learning experiences.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Climate Cadets Collective - C3",
+        timeframe: "2025 - Present",
+        role: "Director of Coummunity and Engagement",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Lead community strategy and engagement for a 400+ member youth climate network, designing initiatives that
+            make climate action more accessible, inclusive, and research-driven.
+
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Build partnerships with national and international organisations, supporting programs like the Climate
+            Ambassadors Initiative, youth diplomacy forums, and advocacy dialogues with policymakers and climate leaders.
           </>,
         ],
         images: [],
@@ -159,12 +151,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "UIET, Maharshi Dayanand University, Rohtak, India",
+        description: <>Studing Computer Science & Engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Indian Institute of Technology, Madras, India",
+        description: <>Studing BS Degree in Data Science and Applications</>,
       },
     ],
   },
@@ -200,22 +192,30 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
+        title: "Data Analysis and Visualization",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Turning raw data into strategy through analysis, modeling, and visualization.</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Python",
+            icon: "python",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "Panadas",
+            icon: "pandas",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Numpy",
+            icon: "numpy",
+          },
+          {
+            name: "SQL",
+            icon: "sql",
+          },
+          {
+            name: "Tableau",
+            icon: "tableau",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -227,6 +227,27 @@ const about: About = {
             height: 9,
           },
         ],
+      },
+      {
+        title: "Data Analysis and Visualization",
+        description: (
+          <>Engineering scalable systems through backend architecture, APIs, and data pipelines.</>
+        ),
+        tags: [
+          {
+            name: "Flask",
+            icon: "flask",
+          },
+          {
+            name: "FastAPI",
+            icon: "fastapi",
+          },
+          {
+            name: "PostgreSQL",
+            icon: "postgresql",
+          },
+        ],
+        images: [],
       },
     ],
   },
